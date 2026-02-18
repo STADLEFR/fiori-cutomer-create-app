@@ -96,9 +96,19 @@
                 <Annotation Term="UI.Facets">
                     <Collection>
                         <Record Type="UI.ReferenceFacet">
-                            <PropertyValue Property="Label" String="Kunden Details"/>
+                            <PropertyValue Property="Label" String="Standarddetails"/>
                             <PropertyValue Property="ID" String="opSecKundenDetails"/>
                             <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#opCustomerDetails"/>
+                        </Record>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Label" String="Vertriebsdaten"/>
+                            <PropertyValue Property="ID" String="opVertriebsDetails2"/>
+                            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#opVertriebsDetails"/>
+                        </Record>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Label" String="Buchhaltungdetails"/>
+                            <PropertyValue Property="ID" String="opBuchhaltungDetails2"/>
+                            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#opBuchhaltungDetails"/>
                         </Record>
                     </Collection>
                 </Annotation>
@@ -175,6 +185,33 @@
                             <PropertyValue Property="Label" String="KUKLA"/>
                         </Record>
                     </Collection>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="opBuchhaltungDetails">
+                    <Record Type="UI.FieldGroupType">
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Duns"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Kukla"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Buchhaltung"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="opVertriebsDetails">
+                    <Record Type="UI.FieldGroupType">
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Duns"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Vertriebsdaten"/>
+                    </Record>
                 </Annotation>
             </Annotations>
         </Schema>
