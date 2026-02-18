@@ -27,48 +27,67 @@
                             <Collection>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="KUNNR"/>
+                                    <PropertyValue Property="Label" String="Kundennummer"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="Name1"/>
+                                    <PropertyValue Property="Label" String="Name"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="Name2"/>
+                                    <PropertyValue Property="Label" String="Name2"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="Name3"/>
+                                    <PropertyValue Property="Label" String="Name3"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="Name4"/>
+                                    <PropertyValue Property="Label" String="Name4"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="Street"/>
+                                    <PropertyValue Property="Label" String="Strasse"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="PostlCod1"/>
+                                    <PropertyValue Property="Label" String="PLZ"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="City"/>
+                                    <PropertyValue Property="Label" String="City"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="Ort02"/>
+                                    <PropertyValue Property="Label" String="Ort02"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="Regio"/>
+                                    <PropertyValue Property="Label" String="Regio"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Land1"/>
+                                    <PropertyValue Property="Label" String="Land1"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="Spras"/>
+                                    <PropertyValue Property="Label" String="Sprache"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="Sortl"/>
+                                    <PropertyValue Property="Label" String="Sortierung"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="Stceg"/>
+                                    <PropertyValue Property="Label" String="Stceg"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="Duns"/>
+                                    <PropertyValue Property="Label" String="Duns"/>
                                 </Record>
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="Kukla"/>
+                                    <PropertyValue Property="Label" String="Kukla"/>
                                 </Record>
                             </Collection>
                         </PropertyValue>
@@ -80,6 +99,80 @@
                             <PropertyValue Property="Label" String="Kunden Details"/>
                             <PropertyValue Property="ID" String="opSecKundenDetails"/>
                             <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#opCustomerDetails"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>Name1</PropertyPath>
+                        <PropertyPath>PostlCod1</PropertyPath>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="KUNNR"/>
+                            <PropertyValue Property="Label" String="Kundennummer"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Name1"/>
+                            <PropertyValue Property="Label" String="Name"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Name2"/>
+                            <PropertyValue Property="Label" String="Name2"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Name3"/>
+                            <PropertyValue Property="Label" String="Name3"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Name4"/>
+                            <PropertyValue Property="Label" String="Name4"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Street"/>
+                            <PropertyValue Property="Label" String="Straße"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="PostlCod1"/>
+                            <PropertyValue Property="Label" String="PLZ"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="City"/>
+                            <PropertyValue Property="Label" String="City"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Ort02"/>
+                            <PropertyValue Property="Label" String="Ort2"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Regio"/>
+                            <PropertyValue Property="Label" String="Regio"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Land1"/>
+                            <PropertyValue Property="Label" String="Land"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Spras"/>
+                            <PropertyValue Property="Label" String="Sprache"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Sortl"/>
+                            <PropertyValue Property="Label" String="Sortierung"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Stceg"/>
+                            <PropertyValue Property="Label" String="STCEG"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Duns"/>
+                            <PropertyValue Property="Label" String="DUNS"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Kukla"/>
+                            <PropertyValue Property="Label" String="KUKLA"/>
                         </Record>
                     </Collection>
                 </Annotation>
